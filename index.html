@@ -7,6 +7,7 @@
     rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css"
       rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Enriqueta:400,700|Quicksand:400,500" rel="stylesheet">
   </head>
 
   <body>
@@ -16,19 +17,17 @@
     <header>
       <section class="logo-and-name">
         <img src="./resources/images/ic-logo.svg">
-        <p>Colmar Academy</p>
+        <p id="Colmar">Colmar</p><p id="Academy">Academy</p>
       </section>
 
-      <div class="navigation">
-        <nav>
-          <ul>
-            <li>On campus</li>
-            <li>Online</li>
-            <li>For companies</li>
-            <li>Sign in</li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="headernav">
+        <ul>
+          <a href="#"><li>On campus</li></a>
+          <a href="#"><li>Online</li></a>
+          <a href="#"><li>For companies</li></a>
+          <a href="#"><li>Sign in</li></a>
+        </ul>
+      </nav>
 
     </header>
 
@@ -38,11 +37,18 @@
 
 
       <div class="banner">
-        <img src="./resources/images/banner.jpg">
-        <h1>Learn something new everyday</h1>
-        <p>Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit</p>
-        <p>Start here</p>
+        <div class="image">
+          <img src="./resources/images/banner.jpg">
+        </div>
+
+        <div class="bannerwords">
+          <h1>Learn something
+            <br />new everyday</h1>
+          <p>Lorem ipsum dolor sit amet,<br />
+          consectetur adipiscing elit</p>
+          <h6>Start here</h6>
+        </div>
+
       </div>
 
       <div class="information">

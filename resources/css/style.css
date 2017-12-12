@@ -1,0 +1,113 @@
+
+/* General Styling */
+
+html {
+  font-size: 14px;
+  font-family: 'Quicksand', sans-serif;
+  color: #58595b;
+}
+
+p {
+  color: #939598;
+}
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80rem;
+  background-color: #ffffff;
+  margin: auto;
+  justify-content: center;
+}
+
+.logo-and-name p {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
+
+.logo-and-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1.2rem 1.7rem;
+  flex: 1;
+}
+
+#Colmar {
+  color: #000000;
+}
+
+#Academy p {
+  padding-left: -.7rem;
+}
+
+.headernav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headernav {
+  margin-right: 1.7rem;
+}
+
+.headernav a {
+  padding-left: 1.2rem;
+  text-decoration: none;
+  color: #58595b;
+}
+
+.headernav a:hover {
+  color: #000000;
+}
+
+/* Content */
+
+.middle {
+  width: 80rem;
+  margin: auto;
+}
+
+.banner {
+  background-color: #d1d3d4;
+  display: flex;
+  display: row;
+}
+
+.banner .image img {
+  width: 45rem;
+  margin: 2rem 1.5rem;
+}
+
+.bannerwords {
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1rem;
+}
+
+.banner .bannerwords h1 {
+  font-family: Enriqueta, serif;
+  font-size: 2.5rem;
+  font-style: 700;
+  padding-bottom: 1rem;
+}
+
+.banner .bannerwords p {
+  font-family: Quicksand;
+  font-style: 500;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding-bottom: 2rem;
+}
+
+.banner .bannerwords h6 {
+  font-style: 500;
+  color: white;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+  background-color: #58595b;
+  text-align: center;
+}
