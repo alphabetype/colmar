@@ -10,6 +10,8 @@ html {
 p {
   color: #939598;
 }
+
+
 /* Header */
 
 header {
@@ -60,10 +62,10 @@ header {
 }
 
 .headernav a:hover {
-  color: #000000;
+  color: #FF9810;
 }
 
-/* Content */
+/* Banner */
 
 .middle {
   width: 80rem;
@@ -71,9 +73,9 @@ header {
 }
 
 .banner {
-  background-color: #d1d3d4;
+  background-color: #ff9810;
   display: flex;
-  display: row;
+  flex-direction: row;
 }
 
 .banner .image img {
@@ -93,6 +95,7 @@ header {
   font-size: 2.5rem;
   font-style: 700;
   padding-bottom: 1rem;
+  color: #ffffff;
 }
 
 .banner .bannerwords p {
@@ -101,6 +104,7 @@ header {
   font-size: 1.5rem;
   line-height: 1.2;
   padding-bottom: 2rem;
+  color: #ffffff;
 }
 
 .banner .bannerwords h6 {
@@ -108,6 +112,297 @@ header {
   color: white;
   padding-top: .8rem;
   padding-bottom: .8rem;
-  background-color: #58595b;
+  background-color: #FFD10F;
   text-align: center;
+}
+
+.banner .bannerwords a {
+  text-decoration: none;
+}
+
+.banner .bannerwords h6:hover {
+  background-color: #FF7110;
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+
+
+/* Information Section */
+
+.information {
+  display: flex;
+  flex-direction: row;
+}
+
+.information .infoleft img {
+  width: 45rem;
+  margin: 2rem 1.5rem;
+}
+
+.information .infoleft h2 {
+  width: 45rem;
+  margin: 1rem 1.5rem;
+  font-family: Enriqueta, serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* This is weird */
+
+.infoleft h6 {
+  margin: -1rem 1.5rem;
+  font-family: Quicksand, sans-serif;
+  color: #939598;
+}
+
+.information .infoleft p {
+  width: 45rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 2rem 2.5rem 2rem 1.5rem;
+  font-family: Quicksand, sans-serif;
+}
+
+.inforight {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: -1rem;
+}
+
+.inforight img {
+  width: 12rem;
+  height: 12rem;
+  padding: 1rem;
+}
+
+.info_row1 img {
+  padding-top: -1rem;
+  margin-bottom: -2rem;
+}
+
+.info_row2 img {
+  margin-bottom: -1rem;
+}
+
+.info_row1, .info_row2, .info_row3  {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.inforowtext {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.inforight h5 {
+  font-style: Quicksand, sans-serif;
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+}
+
+.inforight p {
+  padding-bottom: .5rem;
+  padding-right: 1rem;
+}
+
+.inforight h6  {
+  color: #ff9810;
+}
+
+.info_row3 {
+  background-color: #d1d3d4;
+}
+
+/* Courses Section */
+
+.courses {
+  width: 80rem;
+  background-color: #FFD10F;
+  text-align: center;
+  align-content: center;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.courses h2{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: Enriqueta, serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.courses_row1, .courses_row2 {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin-bottom: 2rem;
+  width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.courses_row1 .box2, .courses_row2 .box5 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.courses_row1 img, .courses_row2 img {
+  width: 22rem;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  width: 22rem;
+  background-color: white;
+  height: 20rem;
+}
+
+.box4, .box5, .box6  {
+  margin-bottom: 3rem;
+}
+
+.courses_row1 h5, .courses_row2 h5 {
+  font-style: Quicksand, sans-serif;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.courses_row1 h6, .courses_row2 h6 {
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-bottom: .2rem;
+  font-size: .8rem;
+}
+
+.courses_row1 p, .courses_row2 p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 1.2;
+}
+
+/* Thesis Section */
+
+
+.thesis {
+  width: 80rem;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 2rem;
+}
+
+.thesis h2 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: Enriqueta, serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.thesisfeatures {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+.video_feature {
+  width: 60%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+video {
+  padding-top: 1rem;
+  width: 95%;
+}
+
+.underthevideo {
+  margin-top: 2rem;
+}
+
+.underthevideo h5 {
+  font-family: Quicksand, sans-serif;
+  font-size: 1.2rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.underthevideo p {
+  padding-bottom: .5rem;
+  line-height: 1.2;
+  padding-right: 4rem;
+}
+
+
+.others {
+  width: 40%
+}
+
+.others img {
+  height: 12rem;
+  padding: 1rem;
+}
+
+.others h5 {
+  font-family: Quicksand, sans-serif;
+  font-size: 1.2rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.others p {
+  padding-bottom: .5rem;
+  line-height: 1.2;
+}
+
+.others_row1, .others_row2 {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.others_row2 {
+    margin-top: 1rem;
+    background-color: #d1d3d4;
+}
+
+.othersrowtext {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 1rem;
+}
+
+/* Footer */
+
+footer {
+  width: 80rem;
+  border-top: solid 1px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+footer p {
+  margin: 2rem 0;
+  flex: 1;
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer a {
+  padding-left: 2rem;
+  padding-top: 2rem;
+  text-decoration: none;
+  color: #58595b;
+}
+
+footer a:hover {
+  color: #FF9810;
+
 }
