@@ -11,6 +11,17 @@ p {
   color: #939598;
 }
 
+@media (max-width: 720px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
 
 /* Header */
 
@@ -64,6 +75,36 @@ header {
 .headernav a:hover {
   color: #FF9810;
 }
+
+.headernavmobile {
+  display: none;
+}
+
+/* Header - Responsive */
+
+@media (max-width: 480px) {
+
+  header {
+    max-width: 100%;
+  }
+
+  .logo-and-name, .headernav {
+    display: none;
+  }
+  .headernavmobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: .5rem 0;
+  }
+  .headernavmobile img {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+}
+
+
 
 /* Banner */
 
@@ -126,6 +167,29 @@ header {
   transition-duration: .5s;
 }
 
+/* Banner - Responsive */
+
+@media (max-width: 480px) {
+  .middle {
+  max-width: 100%;
+   }
+  .banner {
+  display: inline-block;
+  max-width: 100%;
+    }
+  .banner .image img {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+    }
+  .bannerwords {
+  text-align: left;
+  margin: 2rem;
+    }
+  .infoleft {
+  display: none;
+  }
+}
 
 /* Information Section */
 
@@ -146,8 +210,6 @@ header {
   font-size: 1.8rem;
   font-weight: 700;
 }
-
-/* This is weird */
 
 .infoleft h6 {
   margin: -1rem 1.5rem;
@@ -170,8 +232,8 @@ header {
 }
 
 .inforight img {
-  width: 12rem;
-  height: 12rem;
+  width: 11.4rem;
+  height: 11.4rem;
   padding: 1rem;
 }
 
@@ -212,6 +274,63 @@ header {
 
 .info_row3 {
   background-color: #d1d3d4;
+}
+
+#mobileonly {
+  display: none;
+}
+
+/* Information - Responsive */
+
+@media (max-width: 480px) {
+  .info_row1 img {
+    display: none;
+  }
+  .info_row2 img {
+    display: none;
+  }
+  .info_row3 img {
+    display: none;
+  }
+  .inforowtext {
+    margin-left: 2rem;
+  }
+  .information {
+    max-width: 100%;
+  }
+  .information img {
+      max-width: 100%;
+  }
+  .inforowtext h5 {
+    padding-top:.5rem;
+    font-size: 1.5rem;
+  }
+  .inforowtext p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  .inforowtext h6 {
+    font-size: 1.2rem;
+  }
+  .info_row1, .info_row2, .info_row3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .info_row3 {
+    background-color: #ffffff;
+  }
+  .inforight {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #mobileonly {
+    display: block;
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+  }
 }
 
 /* Courses Section */
@@ -281,6 +400,45 @@ header {
   line-height: 1.2;
 }
 
+.coursesmobile {
+  display: none;
+}
+
+
+/* Courses - Responsive */
+
+@media (max-width: 480px) {
+  .courses_row1, .courses_row2 {
+    display: none;
+  }
+  .courses {
+    background-color: #ffffff;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .courses h2 {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .coursesmobile {
+    display: block;
+    text-align: center;
+  }
+  .coursesmobile p {
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin: 1rem;
+    color: #58595b;
+    background-color: #FFd10f;
+  }
+  .coursesmobile a {
+    text-decoration: none;
+  }
+
+}
+
 /* Thesis Section */
 
 
@@ -335,13 +493,12 @@ video {
   padding-right: 4rem;
 }
 
-
 .others {
   width: 40%
 }
 
 .others img {
-  height: 12rem;
+  height: 9rem;
   padding: 1rem;
 }
 
@@ -374,6 +531,27 @@ video {
   padding-right: 1rem;
 }
 
+/* Thesis - Responsive */
+
+@media (max-width: 480px) {
+  .underthevideo, .others {
+    display: none;
+  }
+
+  .thesis {
+    width: 100%;
+  }
+
+  .video_feature {
+    width: 100%;
+ }
+  video {
+    width: 100%
+  }
+
+}
+
+
 /* Footer */
 
 footer {
@@ -405,4 +583,21 @@ footer a {
 footer a:hover {
   color: #FF9810;
 
+}
+
+/* Footer - Responsive */
+
+footer {
+  width: 100%;
+  margin-left: 5%
+  margin-right: 5%
+}
+
+footer p {
+  margin: 1rem 2rem;
+}
+
+
+footer nav ul {
+  display: none;
 }
